@@ -507,3 +507,4 @@ while(i<=3):
 a= input("enter your full name: ")
 b =(a.replace(" ",""))
 print(len(b))
+
