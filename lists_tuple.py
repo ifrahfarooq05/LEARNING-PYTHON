@@ -1,4 +1,4 @@
-#LISTS:
+#LISTS: #LECTURE 22
 marks=[8,9,6,3,0] #index[0:1:2:3:4] #len[5]
 print(marks)
 print(marks[0])
@@ -26,7 +26,7 @@ print(list3)
 list4=[i*i for i in range(10) if i%2==1]
 print(list4)
 
-#LIST METHODS
+#LIST METHODS LECTURE 23
 l=[43,74,8,12,0,1,43] 
 print(l)
 l.append(2005) #append: to add a new element in the list.
@@ -83,7 +83,7 @@ print(list2)
 list_1= ["apple", "banana", "apple", "cherry", "apple"]
 print(list_1.count("apple"))
 
-#TUPLE:
+#TUPLE: #LECTURE 24
 tup=(12,34,56,78) #tuples are encolsed in round bracket and are immutable.
 print(type(tup))
 print(tup[0:3])   #we can get index of tuple
@@ -105,7 +105,7 @@ tup2= (tup + (12,3,44,65))
 print(tup2)       #we can not modify exisiting tuple but can add elements to other tuples.
 tup3= tup+tup2    # we can add two tupes by creating another tuple.
 #/we cannot append, sort, reverse,chang index aur modify a tuple/#
-#TUPLE METHODS
+#TUPLE METHODS #LECTURE 25
 #write a program consiting of tuple and make changes to that tuple.
 countries=("Russia","Pakistan","Palestine","Austria","America")
 item = list(countries)  #converts a tuple into list

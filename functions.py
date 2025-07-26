@@ -1,3 +1,4 @@
+#LECTURE 20
 #CALCULATING GEOMETRIC MEAN USING DEF FUNCTION:
 def calculatingGmean (a,b):
    mean= a*b/(a+b)

@@ -507,4 +507,4 @@ while(i<=3):
 a= input("enter your full name: ")
 b =(a.replace(" ",""))
 print(len(b))
-
+#ALL LECTURES FROM 1-19 ^
