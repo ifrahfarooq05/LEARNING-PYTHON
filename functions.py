@@ -114,3 +114,51 @@ full_name("obair")   #last_name is taken by default
 full_name() #by default
 full_name('seema','khaleeq')
 
+#LECTURE 30
+#RECURSION IN PYTHON:
+#IN PYTHON,  a function can call other function and it can call ise;f too.
+def factorial(n):
+   if (n==0 or n==1):
+      return 1
+   else:
+      return n* factorial(n-1)
+   
+print(factorial(5))   #5*4*3*2*1 (this is how factorial is!)
+print(factorial(0))   #factorial of 0=1
+print(factorial(8))   #8*7*6*5*4*3*2*1
+
+#write a program to print fabonacci sequence.
+#f0=0        #0,1,1,2,3,5,8,13
+#f1=1
+#f2=f1+f0
+#fn= f(n-1)+f(n-2)
+def print_fibonacci_series(n_terms):
+    """
+    Prints the Fibonacci series up to n_terms.
+
+    Args:
+        n_terms (int): The number of terms in the Fibonacci series to print.
+    """
+    if n_terms <= 0:
+        print("Please enter a positive integer for the number of terms.")
+        return
+
+    a, b = 0, 1  # Initialize the first two Fibonacci numbers
+
+    if n_terms == 1:
+        print(a)
+    else:
+        print(a, end=" ")  # Print the first term
+        print(b, end=" ")  # Print the second term
+
+        for _ in range(2, n_terms):  # Iterate from the third term onwards
+            next_term = a + b
+            print(next_term, end=" ")
+            a = b
+            b = next_term
+
+# Example usage:
+num_terms = int(input("Enter the number of terms for the Fibonacci series: "))
+print_fibonacci_series(num_terms)
+print() # Add a newline for better formatting after the series
+          
