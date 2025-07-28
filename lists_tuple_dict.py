@@ -143,3 +143,38 @@ L3= L1 + L2
 print(L3)
 L4= set(L3)
 print(L4)
+#LECTURE 33 DICTIONARY IN PYTHON:
+#key words: value
+dic={"name":"ifrah", "age":"19"}
+print(dic["age"]) 
+print(dic["name"])
+bd = { 5 : "ifrah",
+       3 : "zain",
+       15 : "obair"}
+print(bd[3])
+info = {"university":"BU","department":"CS","semester":"first"}
+print(info)
+print(info["department"])
+print(info.get("department")) #both are same things.
+#print(info["name"]) #however this will give an error if key value isnt present.
+print(info.get("name")) #and this will not give an error.
+print(info.keys())
+print(info.values())
+for keys in info.keys():
+    print(info[keys])  #keys will iterate
+for key in info.keys():
+    print(f"The value for the corresponding key  {key} is",info[key])
+print(info.items())    #to get key-value pair
+#LECTURE 34 DICT METHODS IN PYTHON:
+id1 = {12:5, 99:4, 87:3.5, 54:4, 122:5}
+id2 = {213: 3, 11: 1}
+#id1.update(id2)
+#print(id1) #id1 will be update and noe contain elements of id2
+#print(id2)
+print(id1.pop(12)) #12:5will be eliminated from id1.
+print(id1)
+id1.popitem() #Last item will be eliminated.
+print(id1)
+#del id2  #this will delete entire the dictionary
+#print(id2)
+del id2[11]#will delete given key value.
