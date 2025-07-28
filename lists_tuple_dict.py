@@ -178,3 +178,39 @@ print(id1)
 #del id2  #this will delete entire the dictionary
 #print(id2)
 del id2[11]#will delete given key value.
+
+#you have this dictionary:
+student = {'name': 'Ava', 'age': 20}
+#Add two more key-value pairs: 'grade': 'A' and 'major': 'Physics'.
+updated = {'grade': 'A' ,'major': 'Physics'}
+student.update(updated)
+print(student)
+
+#Write code to check if the key 'email' exists in the dictionary below:
+person = {'name': 'Liam', 'phone': '123-456'}
+if "email" in person:
+    print("yes")
+else:
+    print("no")
+
+#How many key-value pairs are in this dictionary?
+info2 = {'name': 'Emma', 'city': 'Paris', 'age': 30}
+print(len(info2))
+
+#Copy the following dictionary to a new one and change the 'age' 
+# in the new dictionary to 35. The original should remain unchanged.
+person = {'name': 'Noah', 'age': 28}
+person2 = {}
+person2.update(person)
+print(person2)
+person2['age']= 25 #this is how we edit dict
+print(person2)
+print(person)
+
+#Turn this list into a dictionary:
+data = [('x', 10), ('y', 20), ('z', 30)]
+data2 = dict (data) #list into dict!
+print(data)
+print(type(data))
+print(data2)
+print(type(data2))
