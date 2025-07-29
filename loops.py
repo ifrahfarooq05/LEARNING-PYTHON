@@ -48,3 +48,98 @@ for letters in university:
     if letters in vowels:
        count+=1
 print("The total number of vowels in ",university, "is" ,count)
+ 
+ #LECTURE 18 WHILE LOOP:
+c = 1
+while c<=9:
+    print(c)
+    c = c +1
+print("Done with the loop")
+#d = int(input("Enter a number:" ))
+#while d<=32:
+    #d = int(input("Enter a number:" ))
+#print("Done")    
+
+count = 5
+while count>0:
+    print(count)
+    count = count - 1 #decreament while loop!
+print("done with dec loop")    
+
+#Print even numbers from 2 to 20 using a while loop.
+
+n = 2
+while n<=20:
+    print(n)
+    n = n + 2
+print("These are even numbers from 2-20")
+
+#Take input from the user until they enter 'exit'.
+#e = input("Enter: ")
+#while e != "exit":
+  #   e = input("Enter: ")
+
+#Write a program to find the sum of numbers from 1 to N using a while loop
+#f = int(input("Enter a positive integer: ")) #user input
+f= 7
+totalsum=0
+i = 1
+while f>=i:
+    totalsum+=i
+    i+=1
+print("The total sum is",totalsum)    
+
+#Write a program that asks the user to guess a number between 1 and 100.
+#The program should keep asking until the user guesses the correct number.
+#g = int(input("Guess the number: "))
+g = 5
+while g!= 5:
+    g = int(input("Guess the number: "))
+    if g!=5 and g>5:
+      print("Too High, Try again!")
+    elif g!=5 and g<5:  
+      print("Too Low, Try again")  
+else:
+    print("Right guess!")      
+
+#Simulate a basic login system using a while loop (3 attempts allowed).
+#print("Enter username and password to sign in")
+#count = 0
+#while count<3:
+#    h = input("Username: ")
+#    i = input("Password: ")
+#    if h== "ifrah farooq" and i== '9246':
+#        print("Access Granted")
+#        break
+#    else:
+#        print("Invalid credentials")
+#        count+=1
+
+#LECTURE 19 BREAK AND CONTINUE STATEMENT:
+for numbers in range(12):
+    print(numbers)
+    if numbers== 10:
+        break       #this will break the loop at 10
+print("out of the loop!")    
+for int in range(15):
+    if int == 12:
+      print("Skip the iteration")
+      continue
+    print(int)
+       
+
+ #LECTURE 35 FOR LOOP:
+for i in range (5):
+    print(i)
+    if i==4:
+     break 
+else:
+    print("sorry no i !)")
+i =0
+while i<7:
+    print(i)    
+    i = i + 1
+    if i == 6:
+        break
+else:
+    print("end")       
