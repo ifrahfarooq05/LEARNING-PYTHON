@@ -143,3 +143,61 @@ while i<7:
         break
 else:
     print("end")       
+#PRACTICING BREAK AND CONTINUE STATEMENTS:
+#Write a Python program to print numbers from 1 to 100, but stop the 
+# loop when a number divisible by 17 is encountered.
+print("BREAK AND CONTINUE STATEMENT")
+for j in range(1,111):
+    print(j)
+    if j%17==0:
+        break
+print("Number is divisible by 17")
+
+#Write a program that prints numbers from 1 to 50, but skips the numbers
+#  that are divisible by 5 using continue.
+for k in range(1,51):
+    if k%5==0:
+        print("Skipping the num bcs it's divisible by 5")
+        continue
+    print(k)
+
+#Given a list of numbers, print only the positive numbers using continue.
+for l in range(1,30):
+    if l%2==1:
+        continue
+    print(l)
+print("evens")    
+
+#Given a list of numbers, use a loop to find if the number 42 exists. 
+# If found, print "Found" and break. If not, print "Not found" after 
+# the loop.
+#CASE 1 (42 NOT PRESENT IN THE LIST)
+z = [12,34,55,77,90,3,5,67,87,43,55,22]
+for numbers in z[:]:
+    #print(numbers)
+    if num==42:
+        break
+else:
+     print("42 not found in the list")
+
+x =[12,34,55,77,90,3,5,42,67,87,43,55,22]
+for el in x[:]:
+    if el==42:
+      print("42 is found")
+      break
+else:
+    print("42 cannot be found")
+#Write a program that takes a string input and prints only the consonants 
+# (skip vowels using continue).
+#m = input("enter a sentence: ")
+m = "welcome to vscode"
+for mm in m :
+    if mm in ("aeiouAEIOU"):
+        continue
+    print(mm)
+#Write a program to check if a number is prime using a for loop and break
+#when a factor is found.
+#prime numbers are the numbers that are greater than one and only divisible by themselves.
+
+
+    
