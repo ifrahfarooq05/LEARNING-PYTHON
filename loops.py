@@ -195,9 +195,7 @@ for mm in m :
     if mm in ("aeiouAEIOU"):
         continue
     print(mm)
-#Write a program to check if a number is prime using a for loop and break
-#when a factor is found.
-#prime numbers are the numbers that are greater than one and only divisible by themselves.
-
+for i in range(15):
+    print(i)
 
     
