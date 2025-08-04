@@ -197,5 +197,3 @@ for mm in m :
     print(mm)
 for i in range(15):
     print(i)
-
-    
