@@ -33,3 +33,29 @@ def print_str (s):
 #b = input("Enter a sentence: ") 
 #print_str(b)   
 
+#Create a list of 5 numbers and print:
+#The length  #The first and last number  #The sum of all numbers.
+#Replace the third item in a list with "hello" and print the updated list.
+def my_list(l):
+    c= len(l)
+    d= l[0]
+    e= l[-1]
+    f= l.insert(3,'hello')
+    print("The length of the list is ",c)
+    print("The first element of the list is", d)
+    print("The last element of the list is ",e)
+    print(l)
+
+def my_sum(integers):
+    totalsum=0
+    for n in integers:
+        totalsum += n
+    print("The total sum of all numbers in the list is ", totalsum)
+    
+
+list1=[22,34,55,67,8]
+my_list(list1)
+list2=[22,34,55,67,8]
+my_sum(list2)
+
+
