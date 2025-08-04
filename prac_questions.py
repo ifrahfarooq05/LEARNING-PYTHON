@@ -58,4 +58,18 @@ my_list(list1)
 list2=[22,34,55,67,8]
 my_sum(list2)
 
+#Write a program that swaps the value of two variables
+def swap (a=1,b=2):
+    print("Before swap: ")
+    print("value 1 =",a, "value 2 =",b)
+    a,b= b,a
+    print("After swap: ")
+    print("value 1 =",a, "value 2 =",b)
+    
 
+n1= 5
+n2= 8
+swap(n1,n2)    
+ifrah = 10
+gumiho = 0
+swap(ifrah,gumiho)
