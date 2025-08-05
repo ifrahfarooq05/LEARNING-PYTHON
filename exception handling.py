@@ -39,3 +39,24 @@ def func():
 
 #p = func()
 #print(p)
+
+#LECTURE 38 RASING CUSTOM ERRORS:
+def func2():
+    m= int(input("Enter a number between 5 and 9: "))
+    if m>9 or m<5:
+        raise ValueError("Value should be between 5 and 9")
+    print("good")
+    
+#y=func2()
+#print(y)
+def func3():
+   
+     m= (input(" number between 5 and 9: "))
+     if  m=="quit":
+        print("welldone")
+        
+     elif (int(m)>5 or int(m)<9):
+        raise ValueError("enter num btw 5 and 9 or write quit")    
+    
+y= func3()
+print(y)    
