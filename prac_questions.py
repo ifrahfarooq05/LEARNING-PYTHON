@@ -100,14 +100,25 @@ def sum_of_digits(u):
     while u > 0:
         total += u % 10    
         u = u // 10        
-
     print(f"The sum of digits  is {total}")
-
-
 
 no1= 123
 sum_of_digits(no1)        
 no2= 45
 sum_of_digits(no2)
 
-         
+# Write a function that counts how many vowels are in a given string.
+def count_vowels(s):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
+
+mobile = "samsung"
+print(count_vowels(mobile))
+name= 'ifrah'
+print(count_vowels(name))
+
+
