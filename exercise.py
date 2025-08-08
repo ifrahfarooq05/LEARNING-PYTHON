@@ -12,41 +12,32 @@ elif hour>=17 and hour<19:
 else:
     print("Good Night")
 
-#CREATING A GENERAL KNOWLEDGE QUIZ: EXERCISE 3
-Q1 = str( '''What is the capital city of Canada?
-A) Toronto
-B) Ottawa
-C) Vancouver
-D) Montreal ''')
-Q2 = str( '''Who wrote the play Romeo and Juliet?
-A) Charles Dickens
-B) William Shakespeare
-C) Jane Austen
-D) George Bernard Shaw''')
-Q3 = str('''What is the largest planet in our solar system?
-A) Earth
-B) Saturn
-C) Jupiter
-D) Neptune''')
-print(' "WELCOME TO QUIZ-WHIZZ WITH IFRAH" ')
-print( 'Test your brainpower and boost your knowledge with Ifrah’s ultimate quiz challenge!')
-print(' " ANSWER THE QUESTIONS AND WIN PRIZES" ')      
+#EXERCISE 3 KON BANEGA CRORE PATI:
+questions= [
+    ["what is the national game of pakistan?","cricket","hockey","football","basketball","basketball",2],
+    ["name the capital of Pakistan?","Karachi","Lahore","Islamabad","multan",3],
+    ["Which city of Pakistan is called city of lights?","Karachi","Lahore","Islamabad","multan",1],
+    ["Name national flower of pakistan?","lily","roses","sunflower","jasmines",4]
+]
+levels= [10000,20000,300000,1000000,2000000]
 
-print(Q1)
-a = input("Your answer: ")
-if a=="ottawa":
-    print("Correct answer u win 10,000 Rupees")
-else:
-    print("Wrong answer,Correct answer is Ottawa ")
-print(Q2)    
-b = input("Your answer: ")
-if b=="William Shakespeare":
-    print("Correct answer, u win 10,000 Rupees")
-else:
-    print("Wrong Answer, correct answer is William Shakespeare")
-print(Q3)    
-c = input("Your Answer: ")
-if c== "Jupiter":
-    print("Correct answer, u win 10,000 Rupees")
-else:
-    print("Wrong Answer, Correct answer is Jupiter")
+for i in range(0, len(questions)):
+    question= questions[i]
+    money = 0
+    print(f"Question for Rs. {levels[i]}")
+    print(f"Q: {question[0]}")
+    print(f" 1.{question[1]}  2.{question[2]}")
+    print(f" 3.{question[3]}  4.{question[4]}")
+    reply= int(input("Enter your answer(1-4) or 0 to quit: "))  
+    if(reply==0):
+        money = levels[i-1]
+        break
+    if (reply== question[-1] ):
+       print(f"correct answer you have won Rs. {levels[i]} ")
+       if (i==4):
+           money= 160000
+    else:
+      print("Wrong answer")
+      break 
+print(f"Your take of money is {money}")
+    
