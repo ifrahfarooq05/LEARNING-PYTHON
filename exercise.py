@@ -40,4 +40,22 @@ for i in range(0, len(questions)):
       print("Wrong answer")
       break 
 print(f"Your take of money is {money}")
+
+#EXERCISE 4 CODE LANGUAGE
+def talkincode(l):
+    if len(l)<3:        #if string is less than 3 words.
+        m= l[::-1]     
+                 #add characters start and end of that string    
+        l= "abc"  
+        o="efg" 
+        n = o+ m+l    
+        print(n)
+    else:
+        print( l[::-1] )  #if its greater than 3 then simply reverse the strings
+  
+lang= input("Enter: ")  
+talkincode(lang)
+
+
+
     
