@@ -121,44 +121,52 @@ print(count_vowels(mobile))
 name= 'ifrah'
 print(count_vowels(name))
 
+#short if else statement
+#Write a short if-else statement to check if a number is even or odd.
 
-#CREATING A GENERAL KNOWLEDGE QUIZ: EXERCISE 3
-Q1 = str( '''What is the capital city of Canada?
-A) Toronto
-B) Ottawa
-C) Vancouver
-D) Montreal ''')
-Q2 = str( '''Who wrote the play Romeo and Juliet?
-A) Charles Dickens
-B) William Shakespeare
-C) Jane Austen
-D) George Bernard Shaw''')
-Q3 = str('''What is the largest planet in our solar system?
-A) Earth
-B) Saturn
-C) Jupiter
-D) Neptune''')
-print(' "WELCOME TO QUIZ-WHIZZ WITH IFRAH" ')
-print( 'Test your brainpower and boost your knowledge with Ifrah’s ultimate quiz challenge!')
-print(' " ANSWER THE QUESTIONS AND WIN PRIZES" ')      
+def is_oddoreven (u):
+    print('even') if u%2==0 else print("odd")
 
-print(Q1)
-a = input("Your answer: ")
-if a=="ottawa":
-    print("Correct answer u win 10,000 Rupees")
-else:
-    print("Wrong answer,Correct answer is Ottawa ")
-print(Q2)    
-b = input("Your answer: ")
-if b=="William Shakespeare":
-    print("Correct answer, u win 10,000 Rupees")
-else:
-    print("Wrong Answer, correct answer is William Shakespeare")
-print(Q3)    
-c = input("Your Answer: ")
-if c== "Jupiter":
-    print("Correct answer, u win 10,000 Rupees")
-else:
-    print("Wrong Answer, Correct answer is Jupiter")
+#evenodd=int(input("enter a positive integer: "))
+#is_oddoreven(evenodd)
 
+#Use nested short if-else to classify a number.
+def classify (i):
+    print("positive") if i>=0 else print("negative")
+#clas=int(input("enter a number: "))    
+#classify(clas)
 
+#Check if a person is eligible to vote (age ≥ 18).
+def canvote (p):
+    print("eligible")if p >=18 else print("underage")
+#age= int(input("Enter your age: "))    
+#canvote(age)
+                   
+#ENUMERATE FUNCTION IN PYTHON:
+marks = [12,33,45,67,89,67,90]  
+for index, mark in  enumerate(marks, start=1):
+    print(mark)
+    if (index==4):
+        print("there we go!")  
+
+vegeis = ("capcicum","pea","carrot","cabbage","potatoe","tomatoe")    
+for index, veg in enumerate(vegeis)  :
+    print(veg)
+    if(index==3):
+        print("This is 4th in the list")
+
+students=['ali','taha','fahad','zain','ubair','soha','neha','ifra']  
+student_list=[]
+for index, student in enumerate(students,start=1):
+   student_list.append(f"{index}:{student}")  
+print (student_list)
+
+#Write a function that takes a list of integers and returns a new list containing only the numbers that are at even indexes.
+
+def even_index(a):
+    for index,i in enumerate(a):
+        if (index%2==0):
+            print(i)
+            
+numbers=[12,21,33,48,5,62,73,81,92,0]
+even_index(numbers)
