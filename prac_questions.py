@@ -170,3 +170,17 @@ def even_index(a):
             
 numbers=[12,21,33,48,5,62,73,81,92,0]
 even_index(numbers)
+
+#Write a program to: Print any number from 1 to 100. Print the sum of numbers from 1 to n.
+def sumnum (m):
+    try:
+        sumcount=0
+        e= int(input("Enter a number : "))
+        for numbers in range(e+1):
+            sumcount+=numbers
+        print(f"The sum of all numbers from 1 to {e} is {sumcount} ")
+    except Exception as error:
+        print(e)
+
+hello= "call"
+#sumnum(hello)
