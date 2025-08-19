@@ -184,3 +184,23 @@ def sumnum (m):
 
 hello= "call"
 #sumnum(hello)
+
+#Create a list of 5 numbers. Print the max, min, and average of the list.
+list05=[3,22,15,3,5]
+print (f"The max number in the list is {max(list05)}")
+print(f"The max number in the list is {min(list05)}")
+avg= sum(list05)/len(list05)
+print(f"The average is {avg}")
+
+#Write a function that: Takes a list of numbers as input. Returns the second largest number.
+def sec_larg(jasmine):
+    try:
+        rose = list(set(jasmine))
+        rose.sort(reverse=True)
+        print(rose[1])
+
+    except Exception as oo:
+        print(oo)    
+            
+sun = [11,22,33,44,55]
+sec_larg(sun)            
