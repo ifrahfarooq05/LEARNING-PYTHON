@@ -203,4 +203,24 @@ def sec_larg(jasmine):
         print(oo)    
             
 sun = [11,22,33,44,55]
-sec_larg(sun)            
+sec_larg(sun)    
+
+#Check if a string is a palindrome.Count the number of vowels in a string.
+def checkingstr (potatoes):
+    try:
+        if potatoes==potatoes[::-1]:
+            print("The string is palindrome")
+        else:
+            print("The string is not a palindrome")
+        count=0    
+        vowels="aeiouAEIOU"
+        for potatoe in potatoes:  
+            if potatoe in vowels:
+             count+=1
+        print (f"Total vowels in {potatoes} is {count}")    
+    except Exception as l:
+        print(l)   
+
+spinach = "civic"
+checkingstr(spinach)
+
