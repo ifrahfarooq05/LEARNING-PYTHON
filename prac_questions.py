@@ -224,3 +224,29 @@ def checkingstr (potatoes):
 spinach = "civic"
 checkingstr(spinach)
 
+#Print numbers from 1 to 100. For multiples of 3 print "Fizz", for multiples of 5 print "Buzz", and for both print "FizzBuz".
+for numbers in range(1,101):
+    print(numbers)
+    if numbers%3==0 and numbers%5==0:
+        print("fizz buzz")    
+    elif numbers%3==0:
+        print("fizz")
+    elif numbers%5==0:
+        print("buzz")
+
+#Write a function that checks if two strings are anagrams.
+def anagram_check(str1,str2):
+    if sorted(str1)==sorted(str2):
+        print(f"{str1} and {str2} are anagrams")
+    else:
+        print(f"{str1} and {str2} are not anagrams")
+
+s ="silent"
+l ="listen"
+anagram_check(s,l)
+g = "world"
+h = "earth"
+anagram_check(g,h)
+k = "elite"
+j = "litee"
+anagram_check(k,j)
