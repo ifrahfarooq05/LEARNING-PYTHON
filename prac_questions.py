@@ -250,3 +250,18 @@ anagram_check(g,h)
 k = "elite"
 j = "litee"
 anagram_check(k,j)
+
+#Given a list, return a list of duplicate elements.
+def find_duplicates(lst):
+    seen = set()
+    duplicates = set()
+    
+    for item in lst:
+        if item in seen:
+            duplicates.add(item)
+        else:
+            seen.add(item)
+    print(f"{list(duplicates)}")
+
+months = ['may','july','july','sep','may','jan','oct','nov','oct']
+find_duplicates(months)
